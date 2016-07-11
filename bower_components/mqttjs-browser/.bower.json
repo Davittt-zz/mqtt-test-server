@@ -1,0 +1,29 @@
+{
+  "name": "mqttjs-browser",
+  "version": "0.0.1",
+  "authors": [
+    "Javad Sadeqzadeh <javad@jsade.com>"
+  ],
+  "description": "mqtt.js for browser",
+  "main": "js/browserMqtt.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "mqtt",
+    "browser",
+    "browserify"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/sadeqzadeh/mqttjs-browser",
+  "_release": "0.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.0.1",
+    "commit": "eb154c9e9056c8d00d4fac6c9a8090eefdb33de3"
+  },
+  "_source": "https://github.com/sadeqzadeh/mqttjs-browser.git",
+  "_target": "^0.0.1",
+  "_originalSource": "mqtt-browser",
+  "_direct": true
+}
