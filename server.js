@@ -17,19 +17,19 @@ client.on('connect', function () {
 
 client.on('message', function (topic, message) {
   // message is Buffer 
-  console.log('Entra a client.on, topic = ' + topic ) ;
-  console.log('Message lenght = ' + message ) ;
-  
+
+  var uuid = topic.split("/")[2];  
   message = JSON.parse(message);
   console.log(JSON.stringify(message));
   
   var post = new temperaturePost(
 	{
-	  uuid:  message.uuid,
+	  uuid:  uuid,
 	  kw1:   message.kw1,
 	  kw2:   message.kw2,
 	});
 
+	
 	//save model to MongoDB
 	post.save(function (err) {
 	  if (err) {
